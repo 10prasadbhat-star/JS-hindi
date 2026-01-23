@@ -29,16 +29,33 @@ const arr4 = new Array(1,2,3,4);
 // console.log(myArr2);
 // console.log("C" ,myArr);
 
-let marvels = ["Prasad", "Bhat", "Shaktimaan"];
-let super_hero = ["superman", "spiderman", "hulk"];
+// let marvels = ["Prasad", "Bhat", "Shaktimaan"];
+// let super_hero = ["superman", "spiderman", "hulk"];
 
 // marvels.push(super_hero);
 // console.log(marvels); // output [ 'Prasad', 'Bhat', 'Shaktimaan', [ 'superman', 'spiderman', 'hulk' ] ]
 
-let new_hero = marvels.concat(super_hero);
-console.log(new_hero); // output [ 'Prasad', 'Bhat', 'Shaktimaan', 'superman', 'spiderman', 'hulk' ]
+// let new_hero = marvels.concat(super_hero);
+// console.log(new_hero); // output [ 'Prasad', 'Bhat', 'Shaktimaan', 'superman', 'spiderman', 'hulk' ]
 
-//spreading method//
+// //spreading method//
 
-let new_spread = [...marvels, ...super_hero];
-console.log(new_spread); output [ 'Prasad', 'Bhat', 'Shaktimaan', 'superman', 'spiderman', 'hulk' ]
+// let new_spread = [...marvels, ...super_hero];
+// console.log(new_spread); output [ 'Prasad', 'Bhat', 'Shaktimaan', 'superman', 'spiderman', 'hulk' ]
+
+// let arr_flat = [1,2,3,[3,4,5,[6,7,8]]];
+
+// let new_flat = arr_flat.flat(Infinity);
+// console.log(new_flat); // output [ 1, 2, 3, 3, 4, 5, 6, 7, 8]
+
+// console.log(Array.isArray("Prasad")); //output will be false
+// console.log(Array.from("Prasad")); //output will be [ 'P', 'r', 'a', 's', 'a', 'd' ]
+
+console.log(Array.from({name: "Prasad"})); // output []
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+let an_array = Array.of(score1, score2, score3);
+console.log(an_array);
